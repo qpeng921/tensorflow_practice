@@ -1,0 +1,32 @@
+# test the hyperparameter
+# use openwebtext data
+# char level token
+
+#1. nonsense
+
+batch_size = 32
+block_size = 128 # text length 
+max_iters = 500  # number of times that batch run 
+learning_rate = 2e-5
+eval_iters = 100
+n_embd = 384  #embedding size 
+n_head = 4
+n_layer = 4
+dropout = 0.2
+
+
+#2 . first 1000 iters loss down to 2 from 9 in #1.
+    about half hour, GPU low loaded
+    talking like in English structure, but wrong spelling and not meaningful 
+
+use more iters not the entire data though
+
+batch_size = 64
+block_size = 128 # text length 
+max_iters = 10000  # number of times that batch run 
+learning_rate = 2e-5
+eval_iters = 1000
+n_embd = 384  #embedding size 
+n_head = 4
+n_layer = 4
+dropout = 0.2
